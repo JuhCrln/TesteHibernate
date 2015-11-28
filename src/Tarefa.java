@@ -50,4 +50,9 @@ public class Tarefa {
 	public void setDataFinalizacao(Calendar dataFinalizacao) {
 		this.dataFinalizacao = dataFinalizacao;
 	}
+	
+	@Override
+	public String toString() {
+		return "(" + descricao + ", " + finalizado + ", " + (dataFinalizacao.get(Calendar.YEAR)) + "-" + dataFinalizacao.get(Calendar.MONTH) + "-" + dataFinalizacao.get(Calendar.DAY_OF_MONTH) + ")";
+	}
 }
